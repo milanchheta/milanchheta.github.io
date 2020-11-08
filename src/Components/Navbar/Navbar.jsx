@@ -29,10 +29,6 @@ function Navbar() {
   }
   return (
     <nav className="navbar navbar-expand-lg fixed-top shadow  my-auto   mb-5 ">
-      <a className="navbar-brand" href="#Home">
-        {/* <img src={logo} style={{ width: "50px", height: "50px" }} alt="logo" /> */}
-        Milan Chheta
-      </a>
       <button
         className="navbar-toggler"
         type="button"
