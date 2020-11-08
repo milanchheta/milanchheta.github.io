@@ -1,0 +1,32 @@
+.Home {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 450px) {
+  .Home {
+    height: 100vh;
+    margin-top: 70px;
+  }
+}
+
+.greeting {
+  color: #019fb6;
+  font-weight: 600;
+}
+
+.intro-greeting {
+  border-bottom: solid 3px #019fb6;
+  color: #052d38;
+  font-weight: 900;
+}
+
+.skills-greeting {
+  font-size: larger;
+  font-weight: 600;
+
+  color: #07576d;
+}
+
+.intro {
+  margin: auto;
+}

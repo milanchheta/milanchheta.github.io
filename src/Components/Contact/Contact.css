@@ -1,0 +1,35 @@
+.Contact {
+  /* height: 100vh; */
+}
+
+.ContactHeading {
+  color: #052d38;
+  font-weight: 900;
+}
+
+label {
+  font-weight: 600;
+  color: #052d38;
+}
+.sendMessage {
+  border: none;
+  background: #052d38;
+  font-weight: 700 !important;
+  padding: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #019fb6;
+}
+
+.sendMessage:hover {
+  color: #fff !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: #019fb6;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}

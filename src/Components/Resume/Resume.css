@@ -1,0 +1,53 @@
+.Resume {
+  /* height: 100vh; */
+}
+
+.resumeHeading {
+  color: #052d38;
+  font-weight: 900;
+}
+
+.hStyle {
+  color: #052d38;
+  font-weight: 600;
+}
+
+.box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  border: solid 1px #4183d7;
+  text-align: center;
+  box-shadow: 0 1px 2px #4183d7;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box:hover {
+  box-shadow: 0 5px 15px #4183d7;
+}
+
+.content-item small {
+  color: #888;
+}
+
+.content-item h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content-item h3 span {
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content-item h4 {
+  font-size: 15px;
+
+  margin: 0;
+  line-height: 1;
+}

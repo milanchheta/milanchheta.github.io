@@ -1,0 +1,28 @@
+.Footer {
+  background-color: #91b5bb;
+}
+
+.fa-github-square {
+  color: #333;
+}
+.fa-envelope {
+  color: rgb(124, 217, 245);
+}
+.fa-linkedin {
+  color: rgb(61, 105, 163);
+}
+
+.fa-github-square:hover {
+  transition: all 0.5s ease 0s;
+
+  color: #fff;
+}
+.fa-envelope:hover {
+  transition: all 0.5s ease 0s;
+
+  color: #fff;
+}
+.fa-linkedin:hover {
+  color: #fff;
+  transition: all 0.5s ease 0s;
+}
