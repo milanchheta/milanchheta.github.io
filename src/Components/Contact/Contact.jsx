@@ -4,23 +4,40 @@ import {
   NotificationManager,
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const mailForm = document.forms["contactForm"];
-    // const email = mailForm.elements["email"].value.trim();
-    // const firstName = mailForm.elements["fname"].value.trim();
+    const mailForm = document.forms["contactForm"];
+    const email = mailForm.elements["email"].value.trim();
+    const firstName = mailForm.elements["fname"].value.trim();
 
-    // const lastName = mailForm.elements["lname"].value.trim();
-    // const message = mailForm.elements["message_email"].value.trim();
-    // const formData = {
-    //   email,
-    //   firstName,
-    //   lastName,
-    //   message,
-    // };
-    NotificationManager.success("Message Sent", "");
+    const lastName = mailForm.elements["lname"].value.trim();
+    const message = mailForm.elements["message_email"].value.trim();
+    const formData = {
+      email,
+      firstName,
+      lastName,
+      message,
+    };
+
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        formData,
+        process.env.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          NotificationManager.success("Message Sent", "");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div className="Contact padding-class" id="Contact">
