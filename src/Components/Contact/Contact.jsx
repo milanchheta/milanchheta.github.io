@@ -15,6 +15,7 @@ function Contact() {
 
     const lastName = mailForm.elements["lname"].value.trim();
     const message = mailForm.elements["message_email"].value.trim();
+
     const formData = {
       email,
       firstName,
