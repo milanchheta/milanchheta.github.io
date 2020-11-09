@@ -24,11 +24,11 @@ function Contact() {
     };
 
     emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+      .send(
+        "service_ys0hp09",
+        "template_l80151h",
         formData,
-        process.env.USER_ID
+        "user_z1wAsYQICclE4gEL1CsiC"
       )
       .then(
         (result) => {
@@ -71,6 +71,7 @@ function Contact() {
                       type="text"
                       className="form-control border-info"
                       id="fname"
+                      required
                     />
                   </div>
                 </div>
@@ -83,6 +84,7 @@ function Contact() {
                       type="text"
                       className="form-control border-info"
                       id="lname"
+                      required
                     />
                   </div>
                 </div>
@@ -95,6 +97,7 @@ function Contact() {
                   type="email"
                   className="form-control border-info"
                   id="email"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -107,6 +110,7 @@ function Contact() {
                   id="message_email"
                   cols="30"
                   rows="5"
+                  required
                 ></textarea>
               </div>
               <button
@@ -114,6 +118,7 @@ function Contact() {
                   handleSubmit(e);
                 }}
                 className="btn  sendMessage"
+                type="submit"
               >
                 Send Message
               </button>

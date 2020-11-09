@@ -22,14 +22,6 @@ function AboutMe() {
             <h3 className=" mt-1">Skills</h3>
             <div className="container">
               <div className="row">
-                <div className="col-6 skill">Python</div>
-                <div className="col-6">
-                  <ProgressBar now={85} variant="info" />
-                </div>
-              </div>
-              <br />
-
-              <div className="row">
                 <div className="col-6 skill">
                   React.js / JavaScript / HTML / CSS
                 </div>
@@ -40,6 +32,13 @@ function AboutMe() {
               <br />
               <div className="row">
                 <div className="col-6 skill">Node.js</div>
+                <div className="col-6">
+                  <ProgressBar now={85} variant="info" />
+                </div>
+              </div>
+              <br />
+              <div className="row">
+                <div className="col-6 skill">Python</div>
                 <div className="col-6">
                   <ProgressBar now={85} variant="info" />
                 </div>
