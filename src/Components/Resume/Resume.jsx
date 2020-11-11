@@ -17,7 +17,8 @@ function Resume() {
                     <div className="content-item">
                       <small>June 2020 - Present</small>
                       <h3>
-                        Cloud Developer Intern <br /> <span>Internship</span>
+                        Cloud Developer Intern <br />{" "}
+                        <span>Remote Internship</span>
                       </h3>
                       <h4>Wolfram Research</h4>
                       <p>Champaign, Illinois</p>
