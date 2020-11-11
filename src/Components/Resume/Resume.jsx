@@ -59,7 +59,7 @@ function Resume() {
                       </h3>
 
                       <h4>Indiana University Bloomington</h4>
-                      <p>Mumbai, India</p>
+                      <p>Bloomington, Indiana</p>
                     </div>
                   </div>
                 </div>
