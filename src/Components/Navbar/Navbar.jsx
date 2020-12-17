@@ -1,8 +1,10 @@
-import logo from "../../images/logo.png";
+import React, { useRef } from "react";
 import "./Navbar.css";
 import $ from "jquery";
 
 function Navbar() {
+  const buttonEl = useRef(null);
+
   window.onscroll = function () {
     var scrollPos = $(document).scrollTop();
     $("#toggleNavbar a").each(function () {
@@ -23,13 +25,18 @@ function Navbar() {
       }
     });
   };
+
   function handleSelection(e) {
+    if (window.innerWidth < 992) {
+      buttonEl.current.click();
+    }
     $(".nav-item a").removeClass("active");
     $("#" + e.target.id).addClass("active");
   }
   return (
-    <nav className="navbar navbar-expand-lg fixed-top shadow  my-auto   mb-5 ">
+    <nav className="navbar navbar-expand-lg fixed-top  scroll-navbar  my-auto   mb-5 ">
       <button
+        ref={buttonEl}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -48,7 +55,7 @@ function Navbar() {
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
           <li className="nav-item">
             <a
-              className="nav-link link active"
+              className="nav-link link active font-2"
               onClick={(e) => handleSelection(e)}
               href="#Home"
               id="home"
@@ -58,7 +65,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a
-              className="nav-link link"
+              className="nav-link link font-2"
               id="aboutme"
               href="#AboutMe"
               onClick={(e) => handleSelection(e)}
@@ -69,7 +76,7 @@ function Navbar() {
 
           <li className="nav-item">
             <a
-              className="nav-link link"
+              className="nav-link link font-2"
               id="resume"
               href="#Resume"
               onClick={(e) => handleSelection(e)}
@@ -80,7 +87,7 @@ function Navbar() {
 
           <li className="nav-item">
             <a
-              className="nav-link link"
+              className="nav-link link font-2"
               id="projects"
               href="#Projects"
               onClick={(e) => handleSelection(e)}
@@ -91,7 +98,7 @@ function Navbar() {
 
           <li className="nav-item">
             <a
-              className="nav-link link"
+              className="nav-link link font-2"
               id="contactme"
               href="#Contact"
               onClick={(e) => handleSelection(e)}

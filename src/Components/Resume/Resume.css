@@ -5,6 +5,7 @@
 .resumeHeading {
   color: #052d38;
   font-weight: 900;
+  font-size: 45px;
 }
 
 .hStyle {
@@ -13,41 +14,71 @@
 }
 
 .box {
-  background: #fff;
   border-radius: 10px;
+  min-height: 200px;
+  max-width: 500px;
+  margin: auto;
   padding: 5px 10px;
-  margin: 20px;
-  border: solid 1px #019fb6;
+  border: solid 2px #019fb6;
   text-align: center;
-  box-shadow: 0 1px 2px #019fb6;
-  transition: box-shadow 0.3s ease-in-out;
-}
-.box:hover {
-  box-shadow: 0 5px 15px #019fb6;
 }
 
-.content-item small {
+.content-item h5 {
   color: #888;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .content-item h3 {
-  font-size: 16px;
-  margin: 0 0 10px;
+  font-size: 25px;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  margin-bottom: 20px;
 }
 
 .content-item h3 span {
-  font-size: 14px;
-  margin: 0 0 10px;
+  font-size: 20px;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .content-item h4 {
-  font-size: 15px;
-
+  font-size: 20px;
   margin: 0;
   line-height: 1;
+  margin-bottom: 0px;
+}
+
+.content-item p {
+  color: #888;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+  .resumeHeading {
+    font-size: 30px;
+  }
+  .content-item p,
+  .content-item h4,
+  .content-item h5 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .resumeHeading {
+    font-size: 30px;
+  }
+  .content-item p,
+  .content-item h4,
+  .content-item h3 span,
+  .content-item h5 {
+    font-size: 14px;
+  }
+
+  .content-item h3 {
+    font-size: 18px;
+  }
 }

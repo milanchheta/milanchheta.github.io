@@ -8,3 +8,23 @@ body {
 .Main {
   height: 100%;
 }
+
+.font-1 {
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+}
+
+.font-2 {
+  font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman,
+    serif;
+  letter-spacing: 1px;
+}
+
+.font-4 {
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+}
+
+.font-3 {
+  font-family: monaco, Consolas, Lucida Console, monospace;
+}
