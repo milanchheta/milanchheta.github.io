@@ -2,6 +2,7 @@ import "./AboutMe.css";
 import profile from "../../images/profile.png";
 import resumepdf from "../../documents/resume.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import data from "../data.json";
 function AboutMe() {
   return (
     <div className="AboutMe padding-class" id="AboutMe">
@@ -20,13 +21,15 @@ function AboutMe() {
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 aboutme mx-auto aboutmeText p-3 font-1 ">
-              {" "}
-              Highly motivated computer science graduate student at Indiana
-              University Bloomington (Class of 2021). <br />
-              <br />
-              My interests lie in the field of Software Engineering, Cloud
-              Computing and Distributed Systems.
-              <br />
+              {data["about"].lines.map((el, idx) => {
+                return (
+                  <div key={idx}>
+                    {el}
+                    <br />
+                  </div>
+                );
+              })}
+
               <div className="downloadResumeDiv mt-3 ">
                 <a
                   className="downloadResume font-4"
@@ -48,87 +51,29 @@ function AboutMe() {
           </div>
 
           <div className="row pt-2 mt-2 px-2 mx-2">
-            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="container-fluid ">
                 <div className="row">
-                  <div className="col-12 skill font-2">
-                    React.js / JavaScript / HTML / CSS
-                    {/* </div>
-                <div className="col-6"> */}
-                    <br />
-                    <ProgressBar now={90} variant="info" label={`90%`} />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-12 skill font-2">
-                    Node.js
-                    {/* </div>
-                <div className="col-6"> */}
-                    <br />
-                    <ProgressBar now={85} variant="info" label={`85%`} />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-12 skill font-2">
-                    Python
-                    {/* </div>
-                <div className="col-6"> */} <br />
-                    <ProgressBar now={85} variant="info" label={`85%`} />
-                  </div>
-                </div>
-                <br />
-              </div>
-            </div>
-
-            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-              <div className="container-fluid ">
-                <div className="row">
-                  <div className="col-12 skill font-2">
-                    MongoDB / MySQL
-                    {/* </div>
-                <div className="col-6"> */} <br />
-                    <ProgressBar now={80} variant="info" label={`80%`} />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-12 skill font-2">
-                    Docker / Kubernetes
-                    {/* </div>
-                <div className="col-6"> */} <br />
-                    <ProgressBar now={75} variant="info" label={`75%`} />
-                  </div>
-                </div>
-                <br />
-                <div className="row">
-                  <div className="col-12 skill font-2">
-                    Google Cloud Platform
-                    {/* </div>
-                <div className="col-6"> */} <br />
-                    <ProgressBar now={65} variant="info" label={`65%`} />
-                  </div>
+                  {data["about"]["skills"].map((el, idx) => {
+                    return (
+                      <div
+                        key={idx}
+                        className="col-lg-6 col-md-12 col-sm-12 col-xs-12 skill font-2 p-2"
+                      >
+                        {el.name}
+                        <ProgressBar
+                          now={el.level}
+                          variant="info"
+                          label={`90%`}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="row">
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center  m-auto">
-            <div className="downloadResumeDiv mt-3 text-center">
-              <a
-                className="downloadResume"
-                href={resumepdf}
-                target="_blank"
-                download="milanChheta.pdf"
-                rel="noreferrer"
-              >
-                Download CV
-              </a>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

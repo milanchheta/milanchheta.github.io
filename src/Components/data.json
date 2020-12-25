@@ -1,0 +1,160 @@
+{
+    "navbar": {
+        "icon": "fas  fa-2x fa-bars",
+        "items": [
+            {
+                "title": "Home",
+                "href": "Home",
+                "id": "home"
+            },
+            {
+                "title": "About Me",
+                "href": "AboutMe",
+                "id": "aboutme"
+            },
+            {
+                "title": "Resume",
+                "href": "Resume",
+                "id": "resume"
+            },
+            {
+                "title": "Projects",
+                "href": "Projects",
+                "id": "projects"
+            },
+            {
+                "title": "Contact Me",
+                "href": "Contact",
+                "id": "contactme"
+            }
+        ]
+    },
+    "home": {
+        "greeting": "Hello, ",
+        "message": "I am Milan",
+        "typeArr": [
+            "Graduate Student at IUB",
+            "Programming Enthusiast",
+            "Web Developer",
+            "Cloud Developer",
+            "React Native Developer"
+        ]
+    },
+    "about": {
+        "lines": [
+            "Highly motivated computer science graduate student at Indiana University Bloomington (Class of 2021).",
+            "My interests lie in the field of Software Engineering, Cloud Computing and Distributed Systems."
+        ],
+        "skills": [
+            {
+                "name": "React.js / JavaScript / HTML / CSS",
+                "level": 90
+            },
+            {
+                "name": "Node.js",
+                "level": 90
+            },
+            {
+                "name": "Python",
+                "level": 90
+            },
+            {
+                "name": "MongoDB / MySQL",
+                "level": 80
+            },
+            {
+                "name": "Google Cloud Platform",
+                "level": 75
+            },
+            {
+                "name": "Docker / Kubernetes",
+                "level": 70
+            }
+        ]
+    },
+    "resume": {
+        "work": {
+            "title": "Work Experience",
+            "items": [
+                {
+                    "title": "Cloud Developer Intern",
+                    "type": "Internship",
+                    "company": "Wolfram Research, Inc",
+                    "location": "Champaign, Illinois",
+                    "date": "June 2020 - Dec 2020"
+                },
+                {
+                    "title": "Software Developer Intern",
+                    "type": "Internship",
+                    "company": "Netgains Technologies PVT LTD",
+                    "location": "Mumbai, India",
+                    "date": "June 2018 - Sept 2018"
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "items": [
+                {
+                    "title": "Master of Science",
+                    "major": "Computer Science",
+                    "cgpa": "3.85 / 4.00",
+                    "university": "Indiana University Bloomington",
+                    "date": "Aug 2019 - May 2021",
+                    "location": "Bloomington, Indiana"
+                },
+                {
+                    "title": "Bachelor of Science",
+                    "major": "Electronics and Telecommunications",
+                    "cgpa": "3.53 / 4.00",
+                    "university": "University of Mumbai",
+                    "date": "Aug 2014 - May 2018",
+                    "location": "Mumbai, India"
+                }
+            ]
+        }
+    },
+    "projects": [
+        {
+            "name": "Distributed MapReduce System on GCP",
+            "github": "https://github.com/milanchheta/mapReduceGCP",
+            "lines": [
+                "Designed, developed, and deployed a generalized MapReduce framework on Google Cloud by implementing parallel computation and dynamic creation of mappers and reducers, allowing to run parallel tasks on multiple Virtual Machines and thus reducing the execution time.",
+                "Developed a Memcached system used as a data storage system by the MapReduce framework, and making it possible to implement a command-based consistent data storage on the network."
+            ]
+        },
+        {
+            "name": "Weather Forecasting System",
+            "github": "https://github.com/milanchheta/ConnectHour",
+            "lines": [
+                "Designed and developed a distributed weather forecasting system by containerizing microservices and deploying it in a Kubernetes cluster.",
+                "Implemented asynchronous communication between services by using Apache Kafka and built a CI/CD pipeline using Travis CI to automate the integration and deployment process.",
+                "Successfully upgraded the system with Traffic management, mTLS security, Gateways, Canary deployments, and system observability by implementing Istio’s service mesh, to improve the security, load balancing, and information gathering of the deployed system."
+            ]
+        },
+        {
+            "name": "Volunteer Management System",
+            "github": "https://github.com/milanchheta/mapReduceGCP",
+            "lines": [
+                "Developed a social network-based event management system, by following the scrum agile methodology, allowing the volunteers to be aware of near-by events and helping the organizations to reach out to volunteers more effectively."
+            ]
+        }
+    ],
+    "footer": {
+        "social": [
+            {
+                "icon": "fab fa-linkedin mx-3 fa-2x",
+                "url": "https://www.linkedin.com/in/milanchheta"
+            },
+            {
+                "icon": "fab fa-github-square mx-3 fa-2x",
+                "url": "https://github.com/milanchheta"
+            },
+            {
+                "icon": "fas fa-envelope mx-3 fa-2x",
+                "url": "mailto:milanchheta@outlook.com"
+            }
+        ],
+        "text": "Website created by Milan Chheta"
+    }
+}

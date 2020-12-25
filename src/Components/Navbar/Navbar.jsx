@@ -1,9 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./Navbar.css";
 import $ from "jquery";
+import data from "../data.json";
 
 function Navbar() {
   const buttonEl = useRef(null);
+  useEffect(() => {
+    $("#home").addClass("active");
+  }, []);
 
   window.onscroll = function () {
     var scrollPos = $(document).scrollTop();
@@ -46,66 +50,26 @@ function Navbar() {
         aria-label="Toggle navigation"
       >
         <span>
-          {" "}
-          <i className="fas  fa-2x fa-bars"></i>
+          <i className={data["navbar"]["icon"]}></i>
         </span>
       </button>
 
       <div className="collapse navbar-collapse " id="toggleNavbar">
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-          <li className="nav-item">
-            <a
-              className="nav-link link active font-2"
-              onClick={(e) => handleSelection(e)}
-              href="#Home"
-              id="home"
-            >
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link link font-2"
-              id="aboutme"
-              href="#AboutMe"
-              onClick={(e) => handleSelection(e)}
-            >
-              About Me
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a
-              className="nav-link link font-2"
-              id="resume"
-              href="#Resume"
-              onClick={(e) => handleSelection(e)}
-            >
-              Resume
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a
-              className="nav-link link font-2"
-              id="projects"
-              href="#Projects"
-              onClick={(e) => handleSelection(e)}
-            >
-              Projects
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a
-              className="nav-link link font-2"
-              id="contactme"
-              href="#Contact"
-              onClick={(e) => handleSelection(e)}
-            >
-              Contact Me
-            </a>
-          </li>
+          {data["navbar"]["items"].map((el, idx) => {
+            return (
+              <li key={idx} className="nav-item">
+                <a
+                  className="nav-link link font-2"
+                  onClick={(e) => handleSelection(e)}
+                  href={"#" + el["href"]}
+                  id={el["id"]}
+                >
+                  {el["title"]}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>
