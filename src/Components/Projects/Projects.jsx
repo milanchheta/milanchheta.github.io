@@ -11,27 +11,28 @@ function Projects() {
           {data.projects.map((el, idx) => {
             return (
               <div
-                className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-3 project"
+                className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-6 p-3 project"
                 key={idx}
               >
-                <div className="card h-100 shadow">
+                <div className="card h-100 shadow p-0">
                   <div className="card-body text-center">
-                    <h3 className="font-2">{el.name}</h3>
+                    <h3 className="font-2 text-break">{el.name}</h3>
                     <hr />
+
                     {el.github && (
                       <a
-                        className="projectLink font-4"
+                        className="projectLink font-4 mb-2 "
                         href={el.github}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Checkout project
+                        GitHub URL
                       </a>
                     )}
                     <br />
                     <button
                       type="button"
-                      className="btn btn-info projectLink mt-3 font-4"
+                      className="btn btn-info projectLink font-4"
                       data-toggle="modal"
                       data-target={"#exampleModal" + idx}
                     >
@@ -84,7 +85,7 @@ function Projects() {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Checkout project
+                            GitHub URL
                           </a>
                         )}
                       </div>

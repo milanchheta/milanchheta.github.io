@@ -4,6 +4,20 @@ import resumepdf from "../../documents/resume.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import data from "../data.json";
 function AboutMe() {
+  const dispSkills = (skills) => {
+    return (
+      <div className="text-center skills py-4 font-1">
+        {skills.map((elem, idx1) => {
+          return (
+            <span key={idx1} className="text-break">
+              {" "}
+              &#9670; {elem}
+            </span>
+          );
+        })}
+      </div>
+    );
+  };
   return (
     <div className="AboutMe padding-class" id="AboutMe">
       <div className="container-fluid ">
@@ -50,26 +64,25 @@ function AboutMe() {
             </div>
           </div>
 
-          <div className="row pt-2 mt-2 px-2 mx-2">
+          <div className="row pt-2 mt-2  mx-2">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="container-fluid ">
-                <div className="row">
-                  {data["about"]["skills"].map((el, idx) => {
-                    return (
-                      <div
-                        key={idx}
-                        className="col-lg-6 col-md-12 col-sm-12 col-xs-12 skill font-2 p-2"
-                      >
-                        {el.name}
-                        <ProgressBar
-                          now={el.level}
-                          variant="info"
-                          label={`90%`}
-                        />
+              <div className="row">
+                {data["about"]["skills"].map((el, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      className="col-lg-4 col-md-4 col-sm-12 col-xs-12 font-2 py-2 text-wrap"
+                    >
+                      <div className="card p-2 h-100 border-info">
+                        <div className="skillCategory text-center p-0 font-4">
+                          {el.category}
+                        </div>
+                        <hr />
+                        {dispSkills(el["skills"])}
                       </div>
-                    );
-                  })}
-                </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@
 }
 
 .project .card {
-  border: solid 2px #019fb6;
+  border: solid 1px #019fb6;
   border-radius: 10px;
   min-height: 200px;
   max-width: 500px;
@@ -42,9 +42,9 @@
 .project h3 {
   font-size: 25px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
   /* text-transform: uppercase; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .modal-body {
   font-size: 20px;

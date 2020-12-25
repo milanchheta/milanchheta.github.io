@@ -41,7 +41,11 @@
 }
 .skill {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
+}
+.skillCategory {
+  font-weight: 500;
+  font-size: 23px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -50,7 +54,11 @@
   }
   .skill {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .skillCategory {
+    font-weight: 500;
+    font-size: 20px;
   }
   .downloadResume {
     font-size: 20px;
@@ -68,7 +76,11 @@
   }
   .skill {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .skillCategory {
+    font-weight: 500;
+    font-size: 18px;
   }
   .downloadResume {
     font-size: 15px;

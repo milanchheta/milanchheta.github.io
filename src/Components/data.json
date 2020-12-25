@@ -46,28 +46,36 @@
         ],
         "skills": [
             {
-                "name": "React.js / JavaScript / HTML / CSS",
-                "level": 90
+                "category": "Languages",
+                "skills": [
+                    "Python",
+                    "JavaScript",
+                    "HTML/CSS",
+                    "MySQL",
+                    "MongoDB",
+                    "Shell-Scripting"
+                ]
             },
             {
-                "name": "Node.js",
-                "level": 90
+                "category": "Technologies",
+                "skills": [
+                    "ReactJS",
+                    "React-Native",
+                    "Redux",
+                    "NodeJS",
+                    "Flask",
+                    "Docker",
+                    "Kubernetes",
+                    "Istio",
+                    "Travis CI"
+                ]
             },
             {
-                "name": "Python",
-                "level": 90
-            },
-            {
-                "name": "MongoDB / MySQL",
-                "level": 80
-            },
-            {
-                "name": "Google Cloud Platform",
-                "level": 75
-            },
-            {
-                "name": "Docker / Kubernetes",
-                "level": 70
+                "category": "Cloud Platforms",
+                "skills": [
+                    "Google Cloud Platform",
+                    "Jetstream Cloud"
+                ]
             }
         ]
     },
