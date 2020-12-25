@@ -18,14 +18,16 @@ function Projects() {
                   <div className="card-body text-center">
                     <h3 className="font-2">{el.name}</h3>
                     <hr />
-                    <a
-                      className="projectLink font-4"
-                      href={el.github}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Checkout project
-                    </a>
+                    {el.github && (
+                      <a
+                        className="projectLink font-4"
+                        href={el.github}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Checkout project
+                      </a>
+                    )}
                     <br />
                     <button
                       type="button"
@@ -75,14 +77,16 @@ function Projects() {
                           );
                         })}
 
-                        <a
-                          className="projectLink font-4 mt-3 "
-                          href={el.github}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Checkout project
-                        </a>
+                        {el.github && (
+                          <a
+                            className="projectLink font-4 mt-3 "
+                            href={el.github}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Checkout project
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -42,8 +42,7 @@
     },
     "about": {
         "lines": [
-            "Highly motivated computer science graduate student at Indiana University Bloomington (Class of 2021).",
-            "My interests lie in the field of Software Engineering, Cloud Computing and Distributed Systems."
+            "Highly motivated computer science graduate student at Indiana University Bloomington (Class of 2021)."
         ],
         "skills": [
             {
@@ -98,7 +97,7 @@
                 {
                     "title": "Master of Science",
                     "major": "Computer Science",
-                    "cgpa": "3.85 / 4.00",
+                    "cgpa": "3.75 / 4.00",
                     "university": "Indiana University Bloomington",
                     "date": "Aug 2019 - May 2021",
                     "location": "Bloomington, Indiana"
@@ -116,27 +115,79 @@
     },
     "projects": [
         {
-            "name": "Distributed MapReduce System on GCP",
+            "name": "Expense Tracker",
+            "github": "https://github.com/milanchheta/ExpenseTracker",
+            "lines": [
+                "An application to track personal expenses, implemented with containerized microservices.",
+                "Deployed the system on Google Cloud Run through a CI/CD pipeline set up with Google Cloud Build and GitHub."
+            ]
+        },
+        {
+            "name": "Word2Vec",
+            "github": "https://github.com/milanchheta/word2vec",
+            "lines": [
+                "Utilized a Neural Network for implementing the word2vec algorithm using TensorFlow and generate word embeddings from a large text corpus."
+            ]
+        },
+        {
+            "name": "Easy Connect",
+            "github": "https://github.com/milanchheta/EasyConnect",
+            "lines": [
+                "A cross-platform mobile application for researchers to easily connect and communicate with each other.",
+                "Utilized research papers to provide recommendations based on computed cosine-similarity."
+            ]
+        },
+        {
+            "name": "Sentence Length Distribution Analysis",
+            "github": "https://github.com/milanchheta/SentenceLengthDistribution",
+            "lines": [
+                "Used Google Cloud Functions to create a serverless application and provide sentence length distribution analysis.",
+                "Reduced the computation cost of the application by designing and adding a caching system using Cloud Firestore."
+            ]
+        },
+        {
+            "name": "Distributed MapReduce System",
             "github": "https://github.com/milanchheta/mapReduceGCP",
             "lines": [
-                "Designed, developed, and deployed a generalized MapReduce framework on Google Cloud by implementing parallel computation and dynamic creation of mappers and reducers, allowing to run parallel tasks on multiple Virtual Machines and thus reducing the execution time.",
-                "Developed a Memcached system used as a data storage system by the MapReduce framework, and making it possible to implement a command-based consistent data storage on the network."
+                "Designed, developed, and deployed a generalized MapReduce framework on Google Cloud with parallel computation functionality among the dynamically created virtual machines for mapper/reducer tasks.",
+                "Built a Memcached system for the MapReduce system, to implement a command-based consistent data storage on the network."
             ]
         },
         {
             "name": "Weather Forecasting System",
-            "github": "https://github.com/milanchheta/ConnectHour",
+            "github": "https://github.com/milanchheta/Orenda",
             "lines": [
-                "Designed and developed a distributed weather forecasting system by containerizing microservices and deploying it in a Kubernetes cluster.",
-                "Implemented asynchronous communication between services by using Apache Kafka and built a CI/CD pipeline using Travis CI to automate the integration and deployment process.",
-                "Successfully upgraded the system with Traffic management, mTLS security, Gateways, Canary deployments, and system observability by implementing Istio’s service mesh, to improve the security, load balancing, and information gathering of the deployed system."
+                "Developed a weather forecasting system and deployed the system in a Kubernetes cluster using a CI/CD pipeline built with Travis CI and GitHub.",
+                "Implemented asynchronous communication between containerized microservices using Apache Kafka, and added Istio’s Service mesh to improve security, load balancing, and information gathering of the deployed system."
+            ]
+        },
+        {
+            "name": "NYC Taxi Data Analysis",
+            "github": "https://github.com/milanchheta/CabAnalysis",
+            "lines": [
+                "Conducted research followed by data exploration, data preparation, and visualization based on NYC Taxi data using MySQL.",
+                "Designed and utilized a multivariate linear regression model to predict the total fare of various taxi trips."
             ]
         },
         {
             "name": "Volunteer Management System",
-            "github": "https://github.com/milanchheta/mapReduceGCP",
+            "github": "https://github.com/milanchheta/ConnectHour",
             "lines": [
-                "Developed a social network-based event management system, by following the scrum agile methodology, allowing the volunteers to be aware of near-by events and helping the organizations to reach out to volunteers more effectively."
+                "A social network-based event management system, built by following the scrum agile methodology, helping volunteers to be aware of near-by events and helping the organizations to reach out to volunteers more effectively."
+            ]
+        },
+        {
+            "name": "Spam Classification",
+            "github": "https://github.com/milanchheta/Spam-Classification",
+            "lines": [
+                "Implemented a Naïve Bayes Classifier to detect spam email using its content."
+            ]
+        },
+        {
+            "name": "Healthcare Management and Monitoring System",
+            "lines": [
+                "A system to maintain and provide the e-records of a patient’s medical data with RFID based authentication.",
+                "Developed an android application to allow users to access medical details and book/maintain appointments."
             ]
         }
     ],

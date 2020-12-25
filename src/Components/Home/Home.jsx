@@ -1,6 +1,6 @@
 import "./Home.css";
-import Typing from "react-typing-animation";
 import data from "../data.json";
+import Typed from "react-typed";
 
 function Home() {
   return (
@@ -14,29 +14,20 @@ function Home() {
             </span>
             <br />
             <br />
-            <Typing loop={true}>
-              <div className="typewriter skills-greeting ml-2 font-1">
-                {data["home"]["typeArr"].map((el, idx) => {
-                  return type(el, idx);
-                })}
-              </div>
-            </Typing>
+
+            <div className="typewriter skills-greeting ml-2 font-1">
+              <Typed
+                strings={data["home"]["typeArr"]}
+                typeSpeed={50}
+                backSpeed={30}
+                backDelay={1200}
+                loop
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  );
-}
-function type(stringToDisplay, idx) {
-  return (
-    <span key={idx}>
-      <Typing.Speed ms={50} />
-      {stringToDisplay}
-      <Typing.Delay ms={1000} />
-      <Typing.Speed ms={20} />
-      <Typing.Backspace count={stringToDisplay.length + 1} />
-      <Typing.Delay ms={1000} />
-    </span>
   );
 }
 
